@@ -1,8 +1,8 @@
 <% if(data) { %>
     <h1><%- data.title %></h1>
-    <p><%- data.content %></p>
+    <p><%- data.content.replace(/\n/g, '<br>') %></p>
     <p>
-        <em>Created at: <%- data.createdAt.toLocaleString() %></em><br />
+        <em>Created at: <%- data.createdAt.toLocaleString() %></em><br>
         <em>Last updated at: <%- data.updatedAt.toLocaleString() %></em>
     </p>
 <% } %>
