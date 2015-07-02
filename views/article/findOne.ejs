@@ -1,0 +1,10 @@
+<% if(data) { %>
+    <h1><%- data.title %></h1>
+    <p><%- data.content %></p>
+    <p>
+        <em>Created at: <%- data.createdAt.toLocaleString() %></em><br />
+        <em>Last updated at: <%- data.updatedAt.toLocaleString() %></em>
+    </p>
+<% } %>
+
+<p><a href="/article">Back to the articles list</a></p>
