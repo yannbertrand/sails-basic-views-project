@@ -1,0 +1,11 @@
+<% if(data.length) { %>
+    <h1>Articles list</h1>
+
+    <ul>
+    <% _.forEach(data, function (article) { %>
+        <li><%- article.title %></li>
+    <% }); %>
+    </ul>
+<% } else { %>
+    <h1>There are no articles for the moment</h1>
+<% } %>
