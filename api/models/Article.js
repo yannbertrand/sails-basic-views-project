@@ -7,7 +7,19 @@
 
 module.exports = {
 
+  schema: true,
   attributes: {
+
+    title: {
+      type: 'string',
+      required: true,
+      unique: true
+    },
+
+    content: {
+      type: 'text',
+      required: true
+    }
 
   }
 };
