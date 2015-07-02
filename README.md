@@ -1,9 +1,9 @@
 # SailsBasicViewsProject
 
-This simple project shows you how you can take avantage of the Sails Blueprint
-API.
+This simple Sails project shows you how you can take avantage of the powerful
+[Blueprint API](http://sailsjs.org/documentation/reference/blueprint-api).
 
-We just have one model defined as follows:
+We have [one model](./api/models/Article.js) defined as follows:
 
 ```javascript
 // Article.js
@@ -28,4 +28,8 @@ module.exports = {
 };
 ```
 
-Now, the interesting thing take place in [the views folder](./views/)...
+In the [corresponding controller](./api/controllers/ArticleController.js), we
+just have created a `new` that allows the Blueprint action routes to create
+a route to `/article/new`.
+
+Now, the interesting things take place in [the views folder](./views/)...
