@@ -3,7 +3,7 @@
 
     <ul>
     <% _.forEach(data, function (article) { %>
-        <li><a href="/article/<%- article.id %>"><%- article.title %></a></li>
+        <li><a href="/article/<%= article.id %>"><%= article.title %></a></li>
     <% }); %>
     </ul>
 <% } else { %>

@@ -1,11 +1,11 @@
 <% if(!data || data.invalidAttributes) { %>
-    <pre><%- data %></pre>
-    
+    <pre><%= data %></pre>
+
     <p><a href="/article/new">Back to the creation form</a></p>
 <% } else if(data.title) { %>
-    <h2>The article "<%- data.title %>" has been created</h2>
+    <h2>The article "<%= data.title %>" has been created</h2>
 
-    <p><a href="/article/<%- data.id %>">Go to the article page</a></p>
+    <p><a href="/article/<%= data.id %>">Go to the article page</a></p>
     <p><a href="/article/new">Create an other article</a></p>
 <% } %>
 
