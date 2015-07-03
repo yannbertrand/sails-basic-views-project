@@ -8,8 +8,8 @@ This simple Sails project shows you how you can take avantage of the powerful
 When you use the API generator (`sails generate api <foo>`), the only 2 things
 that gets created are:
 
-* an empty model (<Foo>.js)
-* an empty controller (<Foo>Controller.js)
+* an empty model (&lt;Foo&gt;.js)
+* an empty controller (&lt;Foo&gt;Controller.js)
 
 You didn't write any controller "action" (a method in the controller),
 any routes...
@@ -24,11 +24,14 @@ actions, right? Well, that's where the Blueprint API comes into play.
 They expose a conventional REST API on top of a controller's `find`, `create`,
 `update`, and `destroy` actions. 
 
-* *GET http://localhost:1337/<foo>*: list the existing <foo>s
-* *GET http://localhost:1337/<foo>/<id>*: get the <foo> with id <id>
-* *POST http://localhost:1337/<foo>*: create a new <foo>
-* *PUT http://localhost:1337/<foo>/<id>*: update the <foo> with id <id>
-* *DELETE http://localhost:1337/<foo>/<id>*: delete the <foo> with id <id>
+* *GET http://localhost:1337/&lt;foo&gt;*: list the existing &lt;foo&gt;s
+* *GET http://localhost:1337/&lt;foo&gt;/&lt;id&gt;*: get the &lt;foo&gt;
+with id &lt;id&gt;
+* *POST http://localhost:1337/&lt;foo&gt;*: create a new &lt;foo&gt;
+* *PUT http://localhost:1337/&lt;foo&gt;/&lt;id&gt;*: update the &lt;foo&gt;
+with id &lt;id&gt;
+* *DELETE http://localhost:1337/&lt;foo&gt;/&lt;id&gt;*: delete the &lt;foo&gt;
+with id &lt;id&gt;
 
 You can disable them in `config/blueprints.js` and set `rest` to `false`.
 
@@ -37,14 +40,15 @@ You can disable them in `config/blueprints.js` and set `rest` to `false`.
 They allow you to access to a controller's CRUD actions from your browser's
 URL bar. **Don't forget to disable them in production.**
 
-* *GET http://localhost:1337/<foo>*: list the existing <foo>s
-* *GET http://localhost:1337/<foo>/<id>*: get the <foo> with id <id>
-* *GET http://localhost:1337/<foo>/create?<attr1>=<val1>&<attr2>=<val2>*:
-create a new <foo>
-* *GET http://localhost:1337/<foo>/update/<id>?<attr1>=<val1>*: update the
-<attr1> of the <foo> with id <id>
-* *GET http://localhost:1337/<foo>/destroy/<id>*: delete the
-<foo> with id <id>
+* *GET http://localhost:1337/&lt;foo&gt;*: list the existing &lt;foo&gt;s
+* *GET http://localhost:1337/&lt;foo&gt;/&lt;id&gt;*: get the &lt;foo&gt;
+with id &lt;id&gt;
+* *GET http://localhost:1337/&lt;foo&gt;/create?&lt;attr1&gt;=&lt;val1&gt;&&lt;attr2&gt;=&lt;val2&gt;*:
+create a new &lt;foo&gt;
+* *GET http://localhost:1337/&lt;foo&gt;/update/&lt;id&gt;?&lt;attr1&gt;=&lt;val1&gt;*: update the
+&lt;attr1&gt; of the &lt;foo&gt; with id &lt;id&gt;
+* *GET http://localhost:1337/&lt;foo&gt;/destroy/&lt;id&gt;*: delete the
+&lt;foo&gt; with id &lt;id&gt;
 
 You can disable them in `config/blueprints.js` and set `shortcuts` to `false`.
 
