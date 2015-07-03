@@ -11,13 +11,21 @@ that gets created are:
 * an empty model (&lt;Foo&gt;.js)
 * an empty controller (&lt;Foo&gt;Controller.js)
 
-You didn't write any controller "action" (a method in the controller),
+You didn't write any controller "action" (a method in a controller),
 any routes...
 
 But when you lift your project (`sails lift`), you can already do some crud
-actions, right? Well, that's where the Blueprint API comes into play.
+operations, right? Well, that's where the Blueprint API magic comes into play.
 
 ### The Blueprint Routes
+
+By default, some params are activated. You can disable each of them in the
+`config/blueprints.js` file.
+
+Each of them allows you to automatically create routes and bind them to your
+controllers' actions at the launching of the server (`sails lift`).
+
+Let's see them in details.
 
 #### Blueprint RESTful Routes
 
@@ -33,8 +41,7 @@ with id &lt;id&gt;
 * *DELETE http://localhost:1337/&lt;foo&gt;/&lt;id&gt;*: delete the &lt;foo&gt;
 with id &lt;id&gt;
 
-You can disable them in the `config/blueprints.js` file and set `rest` to
-`false`.
+You can disable them by setting the `rest` param to `false`.
 
 #### Blueprint Shortcut Routes
 
@@ -53,8 +60,7 @@ update the &lt;attr1&gt; of the &lt;foo&gt; with id &lt;id&gt;
 * *GET http://localhost:1337/&lt;foo&gt;/destroy/&lt;id&gt;*: delete the
 &lt;foo&gt; with id &lt;id&gt;
 
-You can disable them in the `config/blueprints.js` file and set `shortcuts` to
-`false`.
+You can disable them by setting the `shortcuts` param to `false`.
 
 #### Blueprint Action Routes
 
@@ -62,8 +68,7 @@ The eliminate the need to manually bind routes for a controller's action.
 **Warning**, GET, POST, PUT, and DELETE routes will be generated, don't forget
 to limit these in production.
 
-You can disable them in the `config/blueprints.js` file and set `action` to
-`false`.
+You can disable them by setting the `action` param to `false`.
 
 ### The Blueprint Actions
 
