@@ -33,7 +33,8 @@ with id &lt;id&gt;
 * *DELETE http://localhost:1337/&lt;foo&gt;/&lt;id&gt;*: delete the &lt;foo&gt;
 with id &lt;id&gt;
 
-You can disable them in `config/blueprints.js` and set `rest` to `false`.
+You can disable them in the `config/blueprints.js` file and set `rest` to
+`false`.
 
 #### Blueprint Shortcut Routes
 
@@ -43,14 +44,17 @@ URL bar. **Don't forget to disable them in production.**
 * *GET http://localhost:1337/&lt;foo&gt;*: list the existing &lt;foo&gt;s
 * *GET http://localhost:1337/&lt;foo&gt;/&lt;id&gt;*: get the &lt;foo&gt;
 with id &lt;id&gt;
-* *GET http://localhost:1337/&lt;foo&gt;/create?&lt;attr1&gt;=&lt;val1&gt;&&lt;attr2&gt;=&lt;val2&gt;*:
+* *GET
+http://localhost:1337/&lt;foo&gt;/create?&lt;attr1&gt;=&lt;val1&gt;&&lt;attr2&gt;=&lt;val2&gt;*:
 create a new &lt;foo&gt;
-* *GET http://localhost:1337/&lt;foo&gt;/update/&lt;id&gt;?&lt;attr1&gt;=&lt;val1&gt;*: update the
-&lt;attr1&gt; of the &lt;foo&gt; with id &lt;id&gt;
+* *GET
+http://localhost:1337/&lt;foo&gt;/update/&lt;id&gt;?&lt;attr1&gt;=&lt;val1&gt;*:
+update the &lt;attr1&gt; of the &lt;foo&gt; with id &lt;id&gt;
 * *GET http://localhost:1337/&lt;foo&gt;/destroy/&lt;id&gt;*: delete the
 &lt;foo&gt; with id &lt;id&gt;
 
-You can disable them in `config/blueprints.js` and set `shortcuts` to `false`.
+You can disable them in the `config/blueprints.js` file and set `shortcuts` to
+`false`.
 
 #### Blueprint Action Routes
 
@@ -58,11 +62,12 @@ The eliminate the need to manually bind routes for a controller's action.
 **Warning**, GET, POST, PUT, and DELETE routes will be generated, don't forget
 to limit these in production.
 
-You can disable them in `config/blueprints.js` and set `action` to `false`.
+You can disable them in the `config/blueprints.js` file and set `action` to
+`false`.
 
 ### The Blueprint Actions
 
-These are basic actions binded to a controller if you've used the API generator
+These are basic actions binded to a controller if you've used the API generator.
 Here is the list of actions concerned:
 
 * find
