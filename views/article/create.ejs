@@ -1,7 +1,7 @@
 <% if(!data || data.invalidAttributes) { %>
     <pre><%= data %></pre>
 
-    <p><a href="/article/new">Back to the creation form</a></p>
+    <p><a href="javascript:history.back()">Back to the creation form</a></p>
 <% } else if(data.title) { %>
     <h2>The article "<%= data.title %>" has been created</h2>
 
