@@ -1,12 +1,15 @@
 <% if(!data || data.invalidAttributes) { %>
     <pre><%= data %></pre>
 
-    <p><a href="javascript:history.back()">Back to the creation form</a></p>
+    <p>
+        <a href="javascript:history.back()" class="btn btn-primary">Back to the creation form</a>
 <% } else if(data.title) { %>
     <h2>The article "<%= data.title %>" has been created</h2>
 
-    <p><a href="/article/<%= data.id %>">Go to the article page</a></p>
-    <p><a href="/article/new">Create an other article</a></p>
+    <p>
+        <a href="/article/<%= data.id %>" class="btn btn-primary">Go to the article page</a>
+        <a href="/article/new" class="btn btn-default">Create an other article</a>
 <% } %>
 
-<p><a href="/article">Back to the articles list</a></p>
+    <a href="/article" class="btn btn-default">Back to the articles list</a>
+</p>
